@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information, including character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Document</title>
+    <link rel="stylesheet" href="contact_styles.css" />
+</head>
+<body>
+    <!-- Main container with a class "column" -->
+    <div class="column">
+        <!-- Form for user input -->
+        <form action="mailto:marius.c.dragusanu@gmail.com" method="post" enctype="text/plain">
+          
+          <!-- Input field for first name -->
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+          <!-- Input field for last name -->
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+          <!-- Dropdown menu for selecting the country -->
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Romania">Romania</option>
+            <option value="Europe">Europe</option>
+            <option value="Rest of the World">Other</option>
+          </select>
+          
+          <!-- Input field for the subject of the message -->
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject..">
+          
+          <!-- Text area for composing the message body -->
+          <label for="body">Message Body</label>
+          <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
+          
+          <!-- Submit button to send the form data -->
+          <input type="submit" value="Submit">
+          
+        </form>
+    </div>
+</body>
+</html>
